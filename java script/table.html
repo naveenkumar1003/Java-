@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>purchasing</h1>
+   
+    <input type="text" id="product_item" name="product_item" value="" placeholder="enter a item"/>
+    <input type="text" id="qty_item" name="qty_item" value="" placeholder="enter a qty item"/>
+    <input type="text" id="rate_item" name="rate_item" value="" placeholder="enter a rate"/>
+    <button type="button" id="bu" onclick="log()">submit</button>
+
+
+    <table border="2">
+        <thead>
+            <tr>
+                <td>s.no</td>
+                <td>item</td>
+                <td>qty</td>
+                <td>Amount</td>
+                <td>delete</td>
+            </tr>
+        </thead>
+        <tbody id="tbodyid">
+
+        </tbody>
+    </table>
+
+    <script>
+       
+       var item_list=[];
+           function log()
+           {
+            var product_item=document.getElementById("product_item").value;
+            item_list.push(product_item);
+            document.getElementById("product_item").value="";
+    
+            var qty_item=document.getElementById("qty_item").value;
+            item_list.push(qty_item);
+            document.getElementById("qty_item").value="";
+             
+            var rate_item=document.getElementById("rate_item").value;
+            item_list.push(rate_item);
+            document.getElementById("rate_item").value="";
+            
+        //    item_list.push(product_item);
+            // product_name=parseInt(qty_item)*parseInt(rate_item);
+           get_data();
+             }
+
+           function get_data()
+{
+    var string ="";
+    var sno =0;
+
+    item_list.forEach(function(value,index){
+        sno+=1;
+
+        string += '<tr><td>'+sno+'</td><td>'+value+'</td><td>'+value+'</td><td>'+value+'</td><td><a onclick="remove('+index+')">Remove</a></td></tr>';
+    })
+    
+    document.getElementById("tbodyid").innerHTML = string;
+}
+
+    
+function remove(id)
+{
+    item_list.splice(id,1);
+    get_data();
+}
+
+ 
+
+    </script>
+</body>
+</html>

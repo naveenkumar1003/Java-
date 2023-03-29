@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button onclick="pro()">prompt</button> -->
+    <!-- <input type="text" id="user"name="user"value="" placeholder="enter a user name"/>
+    <input type="text" id="pass"name="pass"value="" placeholder="enter a password"/>
+    <button onclick="bu()">display</button> -->
+    <!-- <input type="text" id="num1"name="num1"value=""/>
+    
+    <input type="text" id="num2"name="num2"value=""/><br/>
+    <span id="result">result</span>
+    <button onclick="bu()">display</button> -->
+
+    <!-- <input type="text" id="num1" name="num1" value="" placeholder="Enter a name"/>
+    <input type="text" id="num2" name="num2" value="" placeholder="Enter a name"/>
+    <span id="result"></span>
+    
+    <button onclick="val()">click</button> -->
+
+
+    <label>Enter your name</label>
+    <input type="text"id="user"value=""name="user"placeholder="enter your name" onkeyup="my()"/>
+<p>my name is:<span id="sp1"></span></p>
+
+    
+
+
+
+
+    <script>
+
+    //  function bu()
+    //     {
+        //     a="hello java script"
+        //     alert(a)
+        //   var dem=prompt("please enter your name:"); 
+        //  alert(dem);
+
+        //  var del=prompt("cricket team;");
+        //   switch(del)
+        //   {
+        //     case "India":
+        //     alert("best team in team match")
+        //     break
+        //     case "Austerlia":
+        //     alert("best team in odi match")
+        //     break
+        //     case "West indian":
+        //     alert("best team in T20 match")
+        //     break
+        //     default:
+        //          alert("enter the team")
+        //   }
+
+        // var us=document.getElementById("user").value;
+        // var pass=document.getElementById("pass").value;
+
+        // if(us==""||pass=="")
+        // {
+        //     alert("One of your data is empty, kindly fill it and try again")
+        // }
+        // else{
+        //     alert("correct")
+        // }
+        
+
+// }
+ 
+// function val()
+//         {
+//         var num1 = document.getElementById("num1").value;
+//         var num2 = document.getElementById("num2").value;
+
+//         var result = "";
+//         result += "Addition: " + (Number(num1) + Number(num2)) + "<br>";
+//         result += "Subtraction: " + (num1 - num2) + "<br>";
+//         result += "Multiplication: " + (num1 * num2) + "<br>";
+//         result += "Division: " + (num1 / num2) + "<br>";
+//         result += "Modulus: " + (num1 % num2) + "<br>";
+
+//         document.getElementById("result").innerHTML = result;
+//       }
+function my()
+{
+    var us=document.getElementById("user").value;
+    document.getElementById("sp1").innerHTML=us;
+}
+
+
+
+
+
+
+    </script>
+</body>
+</html>

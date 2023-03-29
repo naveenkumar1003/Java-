@@ -1,0 +1,20 @@
+.cat-img{
+    height: 200px;
+    width: 200px;
+}
+.d{
+    text-align:center;
+}
+.b{
+    background-color: dimgray;
+    width: 200px;
+    height: 100px;
+    margin-left: 160px;
+    border-radius: 20px;
+}
+.d{
+    background-color: black;
+    width: 500px;
+    height: 600px;
+    margin-left: 450px;
+}

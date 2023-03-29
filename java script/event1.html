@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tbody>
+          
+            <!-- <tr>
+                <td>
+                    <label>password</label>
+                    <input type="text"id="pass" name="pass" value="" placeholder="Enter your password"/>
+                </td>
+            </tr>
+            <tr> -->
+                <td>
+                    <label>phone number</label>
+                    <input type="text"id="phone" name="phone" value="" placeholder="Enter your phone number"/>
+                </td>
+            </tr>
+           
+        </tbody>
+    </table>
+   
+
+
+    <button onclick="ev()">submit</button>
+    
+
+
+<script>
+//     function ev()
+// {
+//      var ptn=new RegExp(/^[0-9A-z]{3,8}$/);
+//      var pass=document.getElementById("pass").value;
+    
+
+
+//      if(ptn.test(pass))
+//      {
+//         alert("password correct")
+//      }
+     
+//      else
+//      {
+//         alert("password incorrect")
+//      }
+
+     
+// }
+function ev()
+{
+     var ptn=new RegExp(/^[6-9]{1}[0-9]{9}$/);
+     var phone=document.getElementById("phone").value;
+    
+
+
+     if(ptn.test(phone))
+     {
+        alert("phone number is correct")
+     }
+     
+     else
+     {
+        alert("phone number is not correct")
+     }
+
+     
+}
+</script>
+
+
+
+
+
+
+    
+
+ 
+</body>
+</html>
